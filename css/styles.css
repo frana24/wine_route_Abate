@@ -220,6 +220,51 @@ th, td {
     }
 }
 
+
+.linear-gradiant {
+    background-image: linear-gradient(to left, blue, yellow, blue);
+}
+
+.transform {
+    background-color: #8e1f4c;
+    transform: translate(8px, 30px);
+}
+
+.animate-big {
+    margin: 10px;
+    height: 50px;
+    width: 440px;
+    background-color: #8e1f4c;
+    transition: height 2s, width 1s, background-color 3s;
+}
+
+.animate-big:hover {
+    height: 100px;
+    width: 880px;
+    background-color: grey;
+    color: black
+}
+
+@keyframes animation {
+    0% {width: 110px; height: 25px; background-color: aqua;}
+    25% {width: 110px; height: 25px; background-color: blue;}
+    50% {width: 110px; height: 25px; background-color: chartreuse;}
+    75% {width: 110px; height: 25px; background-color: blue;}
+    100% {width: 110px; height: 25px; background-color: aqua;}
+}
+
+.animation {
+    height: 25px;
+    width: 110px;
+    background-color: aqua;
+    animation-name: animation;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-delay: 5s;
+}
+
+
 /* Tamaño para pc */
 @media screen and (min-width: 1200px) {
     body {
@@ -257,3 +302,5 @@ th, td {
         overflow: hidden;
     }   
 }
+
+
