@@ -21,7 +21,7 @@ header {
     background-size: contain;
     background-repeat: unset;
 }
-.header_section {
+.footer_section {
     max-width: 1000px;
     padding: 30px;
     font-size: 30px;
@@ -301,6 +301,25 @@ th, td {
         border: double;
         overflow: hidden;
     }   
+    .footer_section {
+        visibility: visible;
+        font-size: 10px;
+        background-color: #f2f2f2;
+        grid-area: footer;
+    }
+    .animate-big {
+        visibility: visible;
+        margin-left: -30px;
+        font-size: 33px;
+        margin-top: -30px;
+        background-color: #f2f2f2;
+        grid-area: footer;
+    }
+    footer {
+        visibility: visible;
+        background-color: #f2f2f2;
+        grid-area: footer;
+    }
 }
 
 

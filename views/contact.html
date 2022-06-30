@@ -4,27 +4,53 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../Css/styles.css">
-    
+
         <title>Wine Route</title>
-        <link rel="shortcut icon" href="../icon/vino3.ico">
-    </head>
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+        <script src="../bootstrap/js/jquery.slim.min.js"></script>
+        <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    
+        <link rel="stylesheet" href="../css/styles.css">
+    
+        <link rel="shortcut icon" href="./icon/vino3.ico">
 <body>
+    <!-- Use bootstrap para el header -->
     <header>
-        <section class="header_section">
-            <article>
-                <h1>Choose a route, not a routine</h1>
-                <nav>
-                    <ul class="main-nav">
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="./wineries.html">Wineries</a></li>
-                        <li><a href="./comparative.html">Comparative</a></li>
-                        <li><a href="./who_are_we.html">Who are we?</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </article>
-        </section>
+        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">The wine route</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="../Views/wineries.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                        Wineries
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../Views/wineries.html">All the wineries</a>
+                      <a class="dropdown-item" href="https://bodegaslopez.com.ar/">Bodegas Lopez</a>
+                      <a class="dropdown-item" href="http://www.universovigil.com/">Casa Vigil (El Enemigo)</a>
+                      <a class="dropdown-item" href="https://www.bodegarucamalen.com/">Ruca Malen</a>
+                      <a class="dropdown-item" href="https://www.bodegasalentein.com/">Salentein Valle de Uco</a>
+                    </div>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../Views/comparative.html">Comparative</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../Views/who_are_we.html">Who are we?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Views/contact.html">Contact</a>
+                  </li>
+              </ul>
+            </div>
+        </nav>
     </header>
     <main>
         <section>
@@ -71,11 +97,25 @@
         </section>
     </aside>
     <footer>
-        <li><a href="index.html">Legal Notes</a></li>
-        <li><a href="index.html">Confidentiality Policies</a></li>
-        <li><a href="https://m.facebook.com/">Facebook</a></li>
-        <li><a href="https://instagram.com/">Instagram</a></li>
-        <h4 class="rights">Copyright © 2022 wineroute.coderhouse All Rights Reserved.</h4>
+        <div>
+            <li><a href="index.html">Legal Notes</a></li>
+            <li><a href="index.html">Confidentiality Policies</a></li>
+            <li><a href="https://m.facebook.com/">Facebook</a></li>
+            <li><a href="https://instagram.com/">Instagram</a></li>
+            <h4 class="rights">Copyright © 2022 wineroute.coderhouse All Rights Reserved.</h4>
+        </div>
+    <!-- Use flexbox para el footer -->
+        <div class="footer_section">
+            <h1 class="animate-big">Choose a route, not a routine</h1>
+            <ul class="main-nav">
+                <li><a href="./Views/wineries.html">Wineries</a></li>
+                <li><a href="./Views/comparative.html">Comparative</a></li>
+                <li><a href="./Views/who_are_we.html">Who are we?</a></li>
+                <li><a href="./Views/contact.html">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
