@@ -10,6 +10,7 @@
     <script src="bootstrap/js/jquery.slim.min.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 
+    <link rel="stylesheet" href="social_media/font.css">
     <link rel="stylesheet" href="Css/styles.css">
 
     <link rel="shortcut icon" href="./icon/vino3.ico">
@@ -52,6 +53,11 @@
               </ul>
             </div>
         </nav>
+        <div class="phrase">
+            <div class="col">
+                <h1 class="animate-big">Choose a route, not a routine</h1>
+            </div>
+        </div>
     </header>
     <main>
         <!-- Use grids para el main -->
@@ -80,23 +86,29 @@
         </section>
     </aside>
     <footer>
-        <div>
-            <li><a href="index.html">Legal Notes</a></li>
-            <li><a href="index.html">Confidentiality Policies</a></li>
-            <li><a href="https://m.facebook.com/">Facebook</a></li>
-            <li><a href="https://instagram.com/">Instagram</a></li>
-            <h4 class="rights">Copyright © 2022 wineroute.coderhouse All Rights Reserved.</h4>
-        </div>
     <!-- Use flexbox para el footer -->
-        <div class="footer_section">
-            <h1 class="animate-big">Choose a route, not a routine</h1>
-            <ul class="main-nav">
-                <li><a href="./Views/wineries.html">Wineries</a></li>
-                <li><a href="./Views/comparative.html">Comparative</a></li>
-                <li><a href="./Views/who_are_we.html">Who are we?</a></li>
-                <li><a href="./Views/contact.html">Contact</a></li>
-                <li><a href="index.html">Home</a></li>
-            </ul>
+        <!-- <div class="footer_section"> -->
+        <div class="footer_container">
+            <div class="row">
+                <div class="col">
+                    <ul class="list-inline text-left d-flex flex-column">
+                        <li><a href="https://m.facebook.com/" class="icon-facebook2" target="_blank">Facebook</a></li>
+                        <li><a href="https://instagram.com/" class="icon-instagram" target="_blank">Instagram</a></li>
+                        <li><a href="https://twitter.com/" class="icon-twitter" target="_blank">Twitter</a></li>
+                        <li><a href="https://web.whatsapp.com/" class="icon-whatsapp" target="_blank">WhatsApp</a></li>
+                        <h4 class="rights">Copyright © 2022 wineroute.coderhouse All Rights Reserved.</h4>
+                    </ul>
+                </div>
+                <div class="col">
+                    <!-- <ul class="main-nav"> -->
+                    <ul class="list-inline text-center d-flex flex-column">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="./Views/wineries.html">Wineries</a></li>
+                        <li><a href="./Views/comparative.html">Comparative</a></li>
+                        <li><a href="./Views/who_are_we.html">Who are we?</a></li>
+                        <li><a href="./Views/contact.html">Contact</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
