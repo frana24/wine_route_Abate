@@ -1,0 +1,43 @@
+footer {
+    padding: 1%;
+    background-color: $colorfooter;
+}
+
+body {
+    font-family: $colorfontfamily;
+}
+
+.box p {
+    font-family: $colorfontfamily;
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.title_comparative {
+    font-family: $colorfontfamily;
+    font-size: 20px;
+}
+
+.form_contact {
+    background-color: map-get($color, secondary);
+    position: relative;
+}
+
+.icon-facebook2 {
+    color: map-get($map: $socialmedia, $key: 'facebook');
+    @include size-btn();
+}
+.icon-instagram {
+    color: map-get($map: $socialmedia, $key: 'instagram');
+    @include size-btn();
+}
+.icon-twitter {
+    color: map-get($map: $socialmedia, $key: 'twitter');
+    @include size-btn();
+}
+.icon-whatsapp {
+    color: map-get($map: $socialmedia, $key: 'whatsapp');
+    @include size-btn();
+}

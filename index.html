@@ -5,19 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Wine Route</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <script src="bootstrap/js/jquery.slim.min.js"></script>
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <meta name="description" content="Wineries in Mendonza">
+    <!-- Agregue estos meta -->
+    <meta name="keywords" content="wine, route, mendoza, vino">
+    <meta name="author" content="Francisco Abate">
+    <meta name="robots" content="index, follow">
 
-    <link rel="stylesheet" href="social_media/font.css">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="Css/styles.css">
+    <title>Wine Route</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <script src="./bootstrap/js/jquery.slim.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="./social_media/font.css">
+    <link rel="stylesheet" href="./scss/main.css">
+    <link rel="stylesheet" href="./css/styles.css">
 
     <link rel="shortcut icon" href="./icon/vino3.ico">
 </head>
 <body>
-    <!-- Use bootstrap para el header -->
+    <!-- Use boostrap en el header -->
     <header>
         <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
             <a class="navbar-brand" href="index.html">The wine route</a>
@@ -54,64 +64,60 @@
               </ul>
             </div>
         </nav>
-        <div class="phrase">
-            <div class="col">
-                <h1 class="animate-big">Choose a route, not a routine</h1>
+    </header>
+    <!-- Use flexbox para el main -->
+    <main id="history">
+        <div class="container">
+            <h4 class="title">History of the wine in Mendonza</h4>
+            <div class="columns">
+                <div class="column">
+                    <p>
+                        La vitivinicultura argentina tuvo sus orígenes a mediados del siglo XVI, y coincide con los primeros asentamientos españoles. En efecto, las fundaciones de Santiago del Estero (1553) y de Mendoza (1561), abrieron el camino para la introducción de las primeras cepas de vid. Ésta se propagó por Cuyo, el Tucumán y el área rioplatense, hasta consolidarse en los siglos XVII y XVIII. Fue la etapa de la vitivinicultura criolla, con centro principal en Mendoza y mercados de consumo en Córdoba, Santa Fe y Buenos Aires, entre otros. Pesadas carretas o bien, tropas de mulas conducidas por los arrieros, se ocupaban de trasladar el vino en odres de cuero o botijas de cerámica protegidas con totora. De esta forma se atravesaban los mil kilómetros de camino entre Cuyo y el Litoral para trasladar el vino.
+                    </p>
+                    <p>
+                        Este comercio se realizaba entre dos unidades políticas: Mendoza era la capital de la Provincia de Cuyo del Reino de Chile, y sus productos salían de allí para abastecer a la Gobernación de Buenos Aires, que dependía directamente del Virreinato del Perú.
+                    </p>
+                </div>
+                <div class="column">
+                    <p>
+                        Entre las últimas décadas del siglo XVI y las primeras del XVII surgieron en Mendoza las primeras bodegas y viñedos. Algunas de ellas alcanzaron dimensiones realmente importantes para la época, sobre todo si se tiene en cuenta que en su primer siglo de historia, Mendoza no pasaba de 60 «vecinos», es decir, jefes de familia. El progreso de Mendoza, desde el punto de vista de la población, fue muy lento en los primeros años de su historia, debido a la aridez del clima y la situación de aislamiento que sufría la capital cuyana. No obstante ello, aún en esas precarias condiciones, los vecinos de la ciudad pusieron rápidamente en marcha la industria vitivinícola, y llegaron a levantar bodegas de grandes dimensiones.
+                    </p>
+                    <p>
+                        Los viñedos y bodegas de Alonso de Reinoso (siglo XVI), Alonso de Videla, Juan Amaro y Antonio Moyano Cornejo (siglo XVII) son buenos ejemplos.
+                    </p>
+                    <p>
+                        Alonso de Reinoso llegó a Mendoza poco después de la fundación, procedente de Chile. Durante catorce años vivió en esta ciudad, y realizó un intenso trabajo de fomento de la agricultura y la industria. Plantó una viña e instaló una bodega con capacidad de 5.500 litros de vino.
+                    </p>
+                </div>
+                <div class="column">
+                    <p>
+                        Otro destacado empresario vitivinícola fue don Alonso de Videla, cuya bodega alcanzó dimensiones notables. En efecto, hacia 1618 su bodega tenía 75.000 litros de vino, pues almacenaba las cosechas del año en curso y de la vendimia anterior, en sus viñedos trabajaban unas 20 personas.
+                    </p>
+                    <p>
+                        Otro caso interesante es el de don Antonio Moyano Cornejo; representa la segunda generación en la historia de Mendoza. Don Agustín se abrió camino, a través del comercio y las tropas de carretas, hasta constituir una sólida posición. Plantó una viña con 12.000 plantas y una bodega que, sobre el final de su vida (1658), tenía una capacidad de 30.000 litros.
+                    </p>
+                    <p>
+                        La presencia de estas bodegas en Mendoza es realmente notable para la época. Los documentos hablan de una docena de viñedos durante el siglo XVII y una superficie cultivada de viñas de unas 20 hectáreas aproximadamente.
+                    </p>
+                </div>
             </div>
         </div>
-    </header>
-    <main>
-        <!-- Use grids para el main -->
-        <!-- Make the testimonials section with images of people and ratings when we see ir in class -->
-        <section id="container_testimonials">
-            <article>
-                <h3 class="animation">Testimonials</h3>
-                <br>
-                <h4>Jessica</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                <br>
-                <h4>Francisco</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                <br>
-                <h4>Kristin</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                <br>
-                <h4>Felipe</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            </article>
-        </section>
     </main>
-    <aside class="linear-gradiant">
-        <section class="transform">
-            ASIDE PUBLICIDAD
-        </section>
-    </aside>
     <footer>
-    <!-- Use flexbox para el footer -->
-        <!-- <div class="footer_section"> -->
-        <div class="footer_container">
-            <div class="row">
-                <div class="col">
-                    <ul class="list-inline text-left d-flex flex-column">
-                        <li><a href="https://m.facebook.com/" class="icon-facebook2" target="_blank">Facebook</a></li>
-                        <li><a href="https://instagram.com/" class="icon-instagram" target="_blank">Instagram</a></li>
-                        <li><a href="https://twitter.com/" class="icon-twitter" target="_blank">Twitter</a></li>
-                        <li><a href="https://web.whatsapp.com/" class="icon-whatsapp" target="_blank">WhatsApp</a></li>
-                        <h4 class="rights">Copyright © 2022 wineroute.coderhouse All Rights Reserved.</h4>
-                    </ul>
-                </div>
-                <div class="col">
-                    <!-- <ul class="main-nav"> -->
-                    <ul class="list-inline text-center d-flex flex-column">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="./Views/wineries.html">Wineries</a></li>
-                        <li><a href="./Views/comparative.html">Comparative</a></li>
-                        <li><a href="./Views/who_are_we.html">Who are we?</a></li>
-                        <li><a href="./Views/contact.html">Contact</a></li>
-                    </ul>
-                </div>
+        <div>
+            <div>
+                <ul class="container">
+                    <li><a href="https://m.facebook.com/" class="icon-facebook2" target="_blank"></a></li>
+                    <li><a href="https://instagram.com/" class="icon-instagram" target="_blank"></a></li>
+                    <li><a href="https://twitter.com/" class="icon-twitter" target="_blank"></a></li>
+                    <li><a href="https://web.whatsapp.com/" class="icon-whatsapp" target="_blank"></a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="rights">Copyright © 2022 wineroute.coderhouse All Rights Reserved.</h4>
             </div>
         </div>
     </footer>
 </body>
 </html>
+

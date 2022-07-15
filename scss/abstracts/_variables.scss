@@ -1,0 +1,35 @@
+/* color */
+$colorwine: #8e1f4c;
+$colorfooter: lavender;
+
+/* map-get */ 
+$color: (
+    primary: red,
+    secondary: blue
+);
+
+/* mixin */
+@mixin size-btn {
+    height: 80px;
+    width: 10px;
+} 
+
+/* font */ 
+$colorfontfamily: 'Poppins';
+
+/* maps */
+
+$socialmedia: (
+    facebook: #3b5998,
+    instagram:#3f729b,
+    twitter: #00acee,
+    whatsapp: #25d366,
+);
+
+@each $red_social, $color in $socialmedia {
+    .btn--#{red-social} {
+        background-color: $color;
+    }
+}
+
+
