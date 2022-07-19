@@ -1,29 +1,176 @@
+
 footer {
     padding: 1%;
     background-color: $colorfooter;
 }
 
 body {
-    font-family: $colorfontfamily;
+    font-family: $generalfontfamily;
 }
 
-.box p {
-    font-family: $colorfontfamily;
-    font-size: 20px;
-    margin-top: 20px;
-    text-align: center;
-    border-radius: 50%;
-}
+// comparative.html
 
+main {
+    background-color: bisque;
+}
 .title_comparative {
-    font-family: $colorfontfamily;
-    font-size: 20px;
+    h3 {
+        font-family: $generalfontfamily;
+        font-size: 40px;
+        text-align: center;
+    }
+}
+#table {
+    width: 100%;
+    max-width: 100%;
+    background-size: cover;
+    background-color: bisque;
+    color: #280400;
+}
+.table_comparative {
+    margin-top: 20px;
+        table {
+            width: 100%;
+            text-align: left;
+            font-size: 15px;
+                thead {
+                    background-color: #8e1f4c;
+                }
+                    tr {
+                        border: solid;
+                    }
+                tbody {
+                    background-color: coral;
+                }
+                    th, td {
+                        border-color: black;
+                        border: solid;
+                    }
+        }
+}
+.empty_blocks {
+    background-color: bisque;
 }
 
-.form_contact {
-    background-color: map-get($color, secondary);
-    position: relative;
+.column {
+    background-color: #8e1f4c;
 }
+
+// contact.html
+
+.contact {
+    background: url(../images/contact.jpg);
+    width: 100%;
+    max-width: 100%;
+    background-size: cover;
+    padding: 5%;
+}
+
+.contact_section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact_info {
+    color: $colorwine;
+    max-width: 500px;
+    line-height: 65px;
+    padding-left: 50px;
+    font-size: 18px;
+    margin-bottom: 10px;
+        i {
+            margin-right: 15px;
+            font-size: 20px;
+        }
+}
+
+.general_form {
+    margin-right: 40px;
+    width: 100%;
+}
+.contact_form {
+    background-color: map-get($color, secondary);
+    max-width: 750px;
+    margin-right: 75px;
+    padding: 15px;
+}
+.complete_form {
+    justify-content: left;
+}
+.form {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.first_part_contact {
+    margin-bottom: 10px;
+}
+.form p {
+    margin-bottom: 10px;
+}
+
+.second_part_contact {
+    margin-bottom: 10px;
+}
+.question {
+    display: flex;
+        div {
+            margin-left: 5px;
+        }
+}
+
+// Who are we
+
+.about {
+    text-align: center;
+    margin-top: 20px;
+}
+// .content h3 {
+//     font-family: Arial, Helvetica, sans-serif;
+//     font-size: 25px;
+//     margin-top: 50px;
+//     margin-bottom: 20px;
+//     font-weight: 800;
+// }
+.content p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+// wineries 
+
+.container_box {
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-family: $generalfontfamily;
+    font-size: 15px;
+}
+.box1 {
+    flex: 25%;
+    padding: 5px;
+        div {
+            margin-left: 1rem;
+            h2 {
+                margin-bottom: 1em;
+            }   
+        }
+}
+.box {
+    flex: 25%;
+    padding: 5px;
+    margin-top: 20px;
+            div {
+            margin-left: 1rem;
+            h2 {
+                margin-bottom: 1em;
+            }   
+        }
+}
+
+// footer
 
 .icon-facebook2 {
     color: map-get($map: $socialmedia, $key: 'facebook');
@@ -41,3 +188,4 @@ body {
     color: map-get($map: $socialmedia, $key: 'whatsapp');
     @include size-btn();
 }
+

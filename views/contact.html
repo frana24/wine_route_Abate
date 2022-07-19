@@ -21,7 +21,7 @@
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <link rel="stylesheet" href="../social_media/font.css">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../scss/main.css">
     <link rel="stylesheet" href="../css/styles.css">
 
     <link rel="shortcut icon" href="../icon/vino3.ico">
@@ -65,44 +65,64 @@
             </div>
         </nav>
     </header>
-    <main>
-        <section>
-            <h1>Contact</h1>
-        </section>
-        <section class="form_contact">
-            <article>
-                <form action="index.html" method="" enctype="">
-                    <fieldset class="form">
-                        <legend class="first_part_contact">Main</legend>
-                        <label for="name" id="name">Write your full name: </label>
-                        <input type="text" placeholder="First name" id="name">
-                        <label for="surname" id="surname">Write your surname: </label>
-                        <input type="text" placeholder="Surname" id="surname"><br><br>
-                        <label for="email" id="email">Write your email: </label>
-                        <input type="email" placeholder="Email" id="email"><br>
+    <main class="contact">
+        <div class="contact_section">
+            <div class="contact_info">
+                <div><i class="icon-location"></i>Miramar, Argentina</div>
+                <div><i class="icon-envelop"></i>lic.francisco.abate@gmail.com</div>
+                <div><i class="icon-phone"></i>+54 2291 416121</div>
+                <div><i class="icon-clock2"></i>Mon - Fri 9:00AM to 18:00PM</div>
+            </div>
+        </div>
+        <div class="general_form">
+            <section>
+                <h2>Contact Us</h2>
+            </section>
+            <section class="contact_form">
+                <article class="complete_form">
+                    <form action="index.html" method="" enctype="">
+                        <fieldset class="form">
+                            <legend class="first_part_contact"></legend>
+                            <label for="name" id="name">Write your full name: </label>
+                            <input type="text" placeholder="First name" id="name">
+                            <label for="surname" id="surname">Write your surname: </label>
+                            <input type="text" placeholder="Surname" id="surname">
+                            <label for="email" id="email">Write your email: </label>
+                            <input type="email" placeholder="Email" id="email"><br>
+                            <br>
+                            <p>Comments</p>
+                            <textarea name="" id="" cols="50" rows="10" placeholder="Write your comments"></textarea>
+                            <br><br>
+                        </fieldset>
+                        <fieldset>
+                            <legend class="second_part_contact">More information</legend>
+                            <br>
+                            <div class="question">
+                                <p>How much do you know about wines?</p>
+                                <div>
+                                    <select name="" id="">
+                                        <option value="much">Much</option>
+                                        <option value="little">Little</option>
+                                        <option value="none">None</option>
+                                    </select> 
+                                </div>
+                            </div>
+                            <label for="newsletters">Want to receive newsletters? </label>
+                            <input type="checkbox" id="newsletters"> Yes
+                            <input type="checkbox" id="newsletters"> No <br>
+                        </fieldset>
+                        <!-- <aside class="aside">
+                            <p>Phone</p>
+                            <p>Address</p>
+                            <p>Join our wine club</p>
+                        </aside> -->
                         <br><br>
-                        <p>Comments</p>
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Write your comments"></textarea><br><br>
-                    </fieldset>
-                    <fieldset>
-                        <legend class="second_part_contact">More information</legend>
-                        <p>How much do you know about wines?</p>
-                        <select name="" id="">
-                            <option value="much">Much</option>
-                            <option value="little">Little</option>
-                            <option value="none">None</option>
-                        </select>
-                        <br><br>
-                        <label for="newsletters">Want to receive newsletters? </label>
-                        <input type="checkbox" id="newsletters"> Yes
-                        <input type="checkbox" id="newsletters"> No <br>
-                    </fieldset>
-                    <br><br>
-                    <input type="button" name="" id="" value="Send">
-                    <input type="reset" name="" id="" value="Reset information">
-                </form>
-            </article>
-        </section>
+                        <input type="button" name="" id="" value="Send">
+                        <input type="reset" name="" id="" value="Reset information">
+                    </form>
+                </article>
+            </section>
+        </div>
     </main>
     <footer>
         <div>

@@ -1,6 +1,12 @@
+/* abstracts */ 
 @import './abstracts/variables';
+
+/* base */ 
 @import './base/resets';
 @import './base/base';
 
+/* layouts */
+@import './layouts/header';
 
-
+/* medias queries */
+@import './components/mediaquerie'
