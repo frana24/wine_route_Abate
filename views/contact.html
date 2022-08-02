@@ -39,24 +39,14 @@
                 <li class="nav-item active">
                   <a class="nav-link" href="../index.html">Home</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="./wineries.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-                        Wineries
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="./Views/wineries.html">All the wineries</a>
-                      <a class="dropdown-item" href="https://bodegaslopez.com.ar/">Bodegas Lopez</a>
-                      <a class="dropdown-item" href="http://www.universovigil.com/">Casa Vigil (El Enemigo)</a>
-                      <a class="dropdown-item" href="https://www.bodegarucamalen.com/">Ruca Malen</a>
-                      <a class="dropdown-item" href="https://www.bodegasalentein.com/">Salentein Valle de Uco</a>
-                    </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="../views/wineries.html">Wineries</a>
                   </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./comparative.html">Comparative</a>
+                  <a class="nav-link" href="../views/comparative.html">Comparative</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./who_are_we.html">Who are we?</a>
+                  <a class="nav-link" href="../views/who_are_we.html">Who are we?</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact</a>
@@ -88,19 +78,16 @@
                             <label for="surname" id="surname">Write your surname: </label>
                             <input type="text" placeholder="Surname" id="surname">
                             <label for="email" id="email">Write your email: </label>
-                            <input type="email" placeholder="Email" id="email"><br>
-                            <br>
+                            <input type="email" placeholder="Email" id="email">
                             <p>Comments</p>
-                            <textarea name="" id="" cols="50" rows="10" placeholder="Write your comments"></textarea>
-                            <br><br>
+                            <textarea name="" cols="50" rows="10" placeholder="Write your comments"></textarea>
                         </fieldset>
                         <fieldset>
                             <legend class="second_part_contact">More information</legend>
-                            <br>
                             <div class="question">
                                 <p>How much do you know about wines?</p>
                                 <div>
-                                    <select name="" id="">
+                                    <select name="">
                                         <option value="much">Much</option>
                                         <option value="little">Little</option>
                                         <option value="none">None</option>
@@ -108,17 +95,13 @@
                                 </div>
                             </div>
                             <label for="newsletters">Want to receive newsletters? </label>
-                            <input type="checkbox" id="newsletters"> Yes
-                            <input type="checkbox" id="newsletters"> No <br>
+                            <input type="checkbox"> Yes
+                            <input type="checkbox"> No
                         </fieldset>
-                        <!-- <aside class="aside">
-                            <p>Phone</p>
-                            <p>Address</p>
-                            <p>Join our wine club</p>
-                        </aside> -->
-                        <br><br>
-                        <input type="button" name="" id="" value="Send">
-                        <input type="reset" name="" id="" value="Reset information">
+                        <div class="finish">
+                            <input type="button" name="" value="Send">
+                            <input type="reset" name="" value="Reset information">
+                        </div>
                     </form>
                 </article>
             </section>
